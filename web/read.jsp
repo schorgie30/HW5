@@ -19,5 +19,9 @@
     <body>
         <h1>Cameron's Movies</h1>
         <%= table %>
+        
+        <br><br>
+        
+        <a href="add">Add Movie</a>
     </body>
 </html>

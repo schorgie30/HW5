@@ -10,11 +10,15 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>My Movies</title>
-        <link rel="stylesheet" type="text/css" href="style.css"
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <h1>My Movies Database</h1>
         
+        <div>
+        <div id="center">
         <a href="read">View All</a>
+        </div>
+        </div>
     </body>
 </html>
