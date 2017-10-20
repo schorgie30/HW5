@@ -63,6 +63,24 @@ public class ReadQuery {
         String table = "";
         table += "<table border=1>";
         
+        table += "<tr>";
+        table += "<th>";
+        table += "Movie ID";
+        table += "</th>";
+        table += "<th>";
+        table += "Title";
+        table += "</th>";
+        table += "<th>";
+        table += "Genre";
+        table += "</th>";
+        table += "<th>";
+        table += "Year";
+        table += "</th>";
+        table += "<th>";
+        table += "Director";
+        table += "</th>";
+        table += "</tr>";
+        
         try {
             while(this.results.next()) {
                 
@@ -73,7 +91,18 @@ public class ReadQuery {
                 movie.setMovieYear(this.results.getInt("movieYear"));
                 movie.setMovieDirector(this.results.getString("movieDirector"));
                 
+
+                
                 table += "<tr>";
+                
+//                table += "<th>";
+//                table += "First Name";
+//                table += "</th>";
+//                table += "<th>";
+//                table += "Last Name";
+//                table += "</th>";
+                
+                
                 table += "<td>";
                 table += movie.getMovieID();
                 table += "</td>";
