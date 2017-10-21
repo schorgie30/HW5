@@ -95,13 +95,6 @@ public class ReadQuery {
                 
                 table += "<tr>";
                 
-//                table += "<th>";
-//                table += "First Name";
-//                table += "</th>";
-//                table += "<th>";
-//                table += "Last Name";
-//                table += "</th>";
-                
                 
                 table += "<td>";
                 table += movie.getMovieID();

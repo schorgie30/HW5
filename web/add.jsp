@@ -12,16 +12,16 @@
         <form name="addForm" action="addMovie" method="get">
             
             <label>Movie Title:</label>
-            <input type="text" name="title" value="" />
+            <input type="text" name="movieTitle" value="" />
             <br>
             <label>Genre:</label>
-            <input type="text" name="genre" value="" />
+            <input type="text" name="movieGenre" value="" />
             <br>
             <label>Year:</label>
-            <input type="text" name="year" value="" />
+            <input type="text" name="movieYear" value="" />
             <br>
             <label>Director:</label>
-            <input type="text" name="year" value="" />
+            <input type="text" name="movieDirector" value="" />
             <br>
             <input type="submit" name="submit" value="Submit" />
             

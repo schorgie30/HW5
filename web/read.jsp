@@ -23,5 +23,6 @@
         <br><br>
         
         <a href="add">Add Movie</a>
+        
     </body>
 </html>
