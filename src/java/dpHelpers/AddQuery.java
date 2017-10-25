@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Properties;
 import java.util.logging.Level;
@@ -46,7 +47,20 @@ public class AddQuery {
     }
     
     public void doAdd (Movies movie) {
-        String query = "INSERT INTO movies (movieTitle, movieGenre, movieYear, movieDirector) VALUES (?,?,?,?)";
+        try {
+            String query = "INSERT INTO movies (movieTitle, movieGenre, movieYear, movieDirector) VALUES (?,?,?,?)";
+            
+            PreparedStatement ps = conn.prepareStatement(query);
+            
+            ps.setString(1, movie.getMovieTitle());
+            ps.setString(2, movie.getMovieGenre());
+            ps.setInt(3, movie.getMovieYear());
+            ps.setString(4, movie.getMovieDirector());
+            
+            ps.executeUpdate();
+        } catch (SQLException ex) {
+            Logger.getLogger(AddQuery.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 }
 

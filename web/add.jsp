@@ -9,7 +9,7 @@
     <body>
         <h1>Add A New Movie</h1>
         
-        <form name="addForm" action="addMovie" method="get">
+        <form name="addForm" action="addMovie" method="post">
             
             <label>Movie Title:</label>
             <input type="text" name="movieTitle" value="" />
@@ -18,7 +18,7 @@
             <input type="text" name="movieGenre" value="" />
             <br>
             <label>Year:</label>
-            <input type="text" name="movieYear" value="" />
+            <input type="number" name="movieYear" value="" />
             <br>
             <label>Director:</label>
             <input type="text" name="movieDirector" value="" />

@@ -53,6 +53,7 @@ public class ReadQuery {
             
             PreparedStatement ps = conn.prepareStatement(query);
             this.results = ps.executeQuery();
+            
         } catch (SQLException ex) {
             Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
